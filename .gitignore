@@ -1,0 +1,24 @@
+# Secrets & auth
+*.local
+auth.json
+hosts.yml
+models-store.json
+cache.db
+
+# Runtime state
+sessions/
+prompt-history/
+gemini-acp/
+
+# Backups
+*.bak
+*.orig
+*.pre-kitty-tabs.bak
+*.dotfiles-backup
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Stow internal
+.stow-local-ignore
