@@ -1,0 +1,12 @@
+# Machine-specific overrides — copy to ~/.zshrc.local
+# ⚠️  DO NOT commit ~/.zshrc.local to git
+#
+# After cloning dotfiles, run:
+#   cp ~/dotfiles/zsh/.zshrc.local.example ~/.zshrc.local
+#   Then fill in your values below.
+
+# API Keys
+export GEMINI_API_KEY="your-gemini-api-key-here"
+
+# Podman (run: podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')
+export DOCKER_HOST="unix:///path/to/podman.sock"
