@@ -1,0 +1,11 @@
+[core]
+	editor = code --wait
+[user]
+	name = Juan Esparza
+	email = juanj.esparza@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
