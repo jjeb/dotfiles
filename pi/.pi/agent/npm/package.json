@@ -1,0 +1,13 @@
+{
+  "name": "pi-extensions",
+  "private": true,
+  "dependencies": {
+    "@narumitw/pi-usage": "^0.61.1",
+    "@shopify/ai-toolkit": "^2.0.1",
+    "@vanillagreen/pi-agents-tmux": "^3.1.1",
+    "pi-gemini-acp": "^0.13.2",
+    "pi-open-tui": "^0.3.10",
+    "pi-tmux-status": "^1.0.0",
+    "pi-web-access": "^0.34.0"
+  }
+}

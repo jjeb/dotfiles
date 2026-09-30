@@ -87,5 +87,11 @@ if command -v asdf &>/dev/null && [[ -f "$HOME/.tool-versions" ]]; then
   asdf install || echo "   ⚠️  Some runtimes may need manual plugin installation"
 fi
 
+# ─── 9. Pi Extensions ────────────────────────────────────────
+if [[ -f "$HOME/.pi/agent/npm/package.json" ]]; then
+  echo "📦 Installing Pi extensions..."
+  (cd "$HOME/.pi/agent/npm" && npm install --quiet) || echo "   ⚠️  Pi extensions npm install failed"
+fi
+
 echo ""
 echo "🎉 Done! Restart your shell or run: source ~/.zshrc"
