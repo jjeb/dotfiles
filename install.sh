@@ -18,7 +18,7 @@ fi
 
 # ─── 2. Brew bundle ──────────────────────────────────────────
 echo "📦 Installing Homebrew dependencies..."
-brew bundle --file="$DOTFILES_DIR/Brewfile" --no-lock
+brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 # ─── 3. Oh My Zsh ────────────────────────────────────────────
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
@@ -61,7 +61,7 @@ echo "🔗 Stowing packages..."
 cd "$DOTFILES_DIR"
 for pkg in "${STOW_PACKAGES[@]}"; do
   if [[ -d "$pkg" ]] && [[ -n "$(ls -A "$pkg")" ]]; then
-    stow --restow "$pkg"
+    stow --restow --target="$HOME" "$pkg"
     echo "   ✅ $pkg"
   else
     echo "   ⏭️  $pkg (empty, skipping)"
