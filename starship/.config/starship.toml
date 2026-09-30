@@ -1,0 +1,33 @@
+# ~/.config/starship.toml
+
+# Use emojis in the prompt
+
+
+# Configure the prompt character
+[character]
+# Using a colored symbol for success/error to maintain readability,
+# but can be changed to an emoji like "✅" or "❌" if preferred.
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+# Configure the battery module
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = " 🪫 "
+
+# Configure Git branch module
+[git_branch]
+symbol = "🌱 "
+
+# Configure Git status module
+[git_status]
+stashed = "📦 "
+ahead = "🚀 "
+behind = "🛬 "
+diverged = "🔱 "
+untracked = "❓ "
+staged = "📝 "
+modified = "✏️ "
+renamed = "🚚 "
+deleted = "🗑️ "
