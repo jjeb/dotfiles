@@ -1,0 +1,5 @@
+{
+  "app.model.cycleForward": "ctrl+shift+m",
+  "app.thinking.cycle": "ctrl+shift+t",
+  "app.session.rename": "ctrl+shift+r"
+}

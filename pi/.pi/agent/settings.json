@@ -1,0 +1,20 @@
+{
+  "lastChangelogVersion": "0.99.1",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-sol",
+  "defaultThinkingLevel": "minimal",
+  "theme": "dark",
+  "packages": [
+    "git:github.com/coctostan/pi-superpowers",
+    "npm:pi-tmux-status",
+    "npm:@vanillagreen/pi-agents-tmux",
+    "git:github.com/vedang/pi-prompt-history",
+    "npm:@narumitw/pi-usage",
+    "npm:pi-web-access",
+    "npm:pi-gemini-acp",
+    "npm:@shopify/ai-toolkit",
+    "npm:pi-open-tui"
+  ],
+  "quietStartup": true,
+  "hideThinkingBlock": true
+}
